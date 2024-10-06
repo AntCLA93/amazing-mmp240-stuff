@@ -1,0 +1,145 @@
+/* General body styling */
+body {
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero banner styling */
+.hero-banner {
+    background-image: url('images/the-boys-season-4-homelander.jpg');
+    background-clip: content-box;
+    background-position: cover;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 31.25em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay content inside the hero banner */
+.hero-content {
+    padding-left: 2.5em;
+    max-width: 28.125em;
+    z-index: 2;
+}
+
+/* Logo styling */
+.logo {
+    width: 28.125em;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Hero description styling */
+.hero-description {
+    font-size: 0.9375em;
+    color: #e50914;
+    line-height: 1.6;
+    margin-left: 2.5em;
+    margin-top: 0;
+}
+
+/* Watch button styling */
+.button {
+    display: inline-block;
+    padding: 0.9375em 3.125em;
+    margin-left: 10.3125em;
+    margin-top: 0.625em;
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.3125em;
+    font-size: 0.9375em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #b20710;
+}
+
+/* Styling for the navigation menu */
+.horizontal-list {
+    display: flex;
+    justify-content: start;
+    padding: 0.9375em;
+    list-style-type: none;
+    margin: 0;
+    background-color: #e50914;
+}
+
+.horizontal-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.875em 3.6em;
+    display: block;
+}
+
+.horizontal-list li a:hover {
+    color:#000000;
+}
+
+/* Styling the main content boxes */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5em;
+    background-color: #212F3F;
+}
+
+.col-left, .col-right {
+    background-color: black;
+    background-size: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1.25em;
+    width: 45%;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+}
+
+.col-left h2, .col-right h2 {
+    margin-bottom: 0.625em;
+}
+
+.col-left p {
+    line-height: 1.6;
+    margin-bottom: 0.625em;
+}
+
+.col-right p {
+    line-height: 1.6;
+    margin-bottom: 0.625em;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 64em) {
+    .hero-banner {
+        height: 25em;
+    }
+
+    .hero-content {
+        padding-left: 1.25em;
+        max-width: 37.5em;
+    }
+
+    .hero-description {
+        font-size: 1.25em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 0.75em 1.5em;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .col-left, .col-right {
+        width: 100%;
+        margin-bottom: 1.25em;
+    }
+}
