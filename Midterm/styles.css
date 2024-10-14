@@ -110,8 +110,8 @@ main {
 }
 
 .col-right p {
-    line-height: 1.6;
-    margin-bottom: 0.625em;
+    line-height: 1.6em;
+    margin-top:  2.3em;
 }
 
 /* Media Queries for responsiveness */
