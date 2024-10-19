@@ -13,6 +13,44 @@
     }
       
  /* Add CSS code here */
+ p {
+      font-family: Georgia, serif;
+      font-size: x-small;
+    }
+
+    /* Same color for link and visited states */
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    /* Hover state for hyperlinks */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Navigation hyperlink styles using descendant selector */
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    /* Focus state for the input box */
+    input {
+      border: solid 2px #000000;
+      outline: none;
+    }
+
+    input:focus {
+      border: solid 2px green;
+    }
+    
 
     </style>
 

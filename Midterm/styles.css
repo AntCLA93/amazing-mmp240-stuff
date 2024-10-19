@@ -2,7 +2,13 @@
 body {
     margin: 2%;
     font-family: Arial, Helvetica, sans-serif;
-}
+    }
+
+    #wrapper {
+        max-width:1400px;
+        margin: auto;
+        overflow: auto;
+    }
 
 /* Hero banner styling */
 .hero-banner {
@@ -30,6 +36,7 @@ body {
     width: 28.125em;
     margin-bottom: 0;
     margin-right: 0;
+    
 }
 
 /* Hero description styling */
@@ -40,6 +47,8 @@ body {
     margin-left: 2.5em;
     margin-top: 0;
 }
+
+
 
 /* Watch button styling */
 .button {
