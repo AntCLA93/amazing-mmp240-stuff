@@ -91,70 +91,28 @@ body {
 }
 
 /* Styling the main content boxes */
-main {
-    display: flex;
-    justify-content: space-around;
-    padding: 2.5em;
-    background-color: #212F3F;
-}
-
-.col-left, .col-right {
-    background-color: black;
-    background-size: content;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 1.25em;
-    width: 45%;
-    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
-}
-
-.col-left h2, .col-right h2 {
-    margin-bottom: 0.625em;
-}
-
-.col-left p {
-    line-height: 1.6;
-    margin-bottom: 0.625em;
-}
-
-.col-right p {
-    line-height: 1.6em;
-    margin-top:  2.3em;
-}
-
-/*Episodes cards*/
 
 main {
     display: flex;
     flex-wrap: wrap;
-    width: 5;
+    width: 24.25;
+    margin-right: 1%;
     background-color: #212F3F; 
-    color: #ffffff;
 }
 
 .flex-layout {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: auto;
 }
 
 
 .episode:last-child {
-margin: right 50px;
-height: 10px;
+margin-right: 0;
 }
 
 .card{
-   width: 23%;
+   width: 0;
 }
 
-.img-card{
-   width: 100%;
-   border-style: solid;
-   border-color:  #e50914;
-}
 
 /* Media Queries for responsiveness */
 @media (max-width: 64em) {
