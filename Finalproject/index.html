@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0.5em;
+            font-size: 1em;
+        }
+
+        h1,h2,h3,h4{
+            margin-bottom: 1em;
+        }
+
+        #wrapper{
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #topMenu{
+            display: none;
+            position: absolute;
+            right:0px;
+            top: 25px;
+            background-color: white;
+            border: solid 1px black;
+            padding: 3px;
+        }
+
+        .dropdown{
+            display:none;
+        }
+
+        .programNav{
+            display: block;
+        }
+
+    </style>
     <title>Design@Cuny</title>
 </head>
 <body>
-    <div class="div">
-        <header class="">
+    <div class="div" id="wrapper">
+        <header style="display: flex;justify-content: space-between;">
             <h1>Design @ CUNY</h1>
                 <img src="images/menu.svg" alt="menu" class="menu"></img>
                     <nav id="topMenu">
@@ -38,16 +79,43 @@
             <ul class="dropdown">
                 <li><a href="associate.html">Associate Degree</a></li>
                 <li><a href="bachelors.html">Bachelor Degree</a></li>
-            <ul>
-                <li><a href="">Borough</a>
-                    <ul class="dropdown">
+            </ul>
+            <li><a href="">Borough</a>
+            <ul class="dropdown">
                         <li><a href="brooklyn.html">Brooklyn</a></li>
                         <li><a href="bronx.html">Bronx</a></li>
                         <li><a href="manhattan.html">Manhattan</a></li>
-                    <ul>
+            </ul>
         </li>
         </ul>
         </nav>
+        <main>
+        <section>
+            <h1>Design News</h1>
+            <article>
+                <h2>CUNY TV Wins 21st New York Emmy Award For Animated Opening Sequence of ‘Shades of U.S.’ April 27, 2020</h2>
+                <p>The City University of New York won two awards in the 63rd New York Emmy Awards, as CUNY TV and the New York City College of Technology each earned honors in Saturday’s ceremony. The award for CUNY TV brings to 21 the total number of Emmys the station has been awarded by the National Academy of Television Arts & Sciences New York Chapter.</p>
+                <form action="#">Read more</form>
+            </article>
+
+            <article>
+                <h2>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs October 28, 2019</h2>
+                <p>The City University of New York has significantly expanded its digital skills curriculum as part of a broad-based effort to produce a steady pipeline of diverse, adaptable, critical thinkers who can thrive in a workplace environment that is increasingly reliant on advanced digital technologies across most sectors of the economy. Another aim of this initiative is to encourage traditionally underrepresented groups to take up tech-focused areas of study.</p>
+                <form action="#">Read more</form>
+            </article>
+
+            <article>
+                <h2>Events</h2>
+                <img src="images/Digital-Design-Showcase-cropped.jpg" alt="Digital-Design-Poster">
+                <p>Virtual Digital Design Showcase Day
+                    Date: June 18, 2020
+                    Time: 2:00 PM — 4:00 PM
+                    College: Bronx Community College</p>
+             
+            </article>
+        </section>
+        </main>
+        <footer>Copyright 2023 The City University of New York</footer>
     </div>
 </body>
 </html>
