@@ -1,82 +1,94 @@
-*{
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    margin: 10px
+body {
+    margin: 10px;
 }
 
-nav li{
-    list-style:none;
-    border-bottom: solid 1px black;
-    border top: solid 1px black;
-    width: 15 px;
-}
-
-nav ul{
+/* Top-Level Menu */
+nav ul {
+    list-style: none; 
     padding: 0;
-    list-style-type: none;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: solid 1px #666;
-  background-color:aquamarine;
-    display: block;
-    padding: 10px;
+nav li {
+    position: relative;
 }
 
-nav li ul{
-    display: none;
-
+nav a {
+    text-decoration: none; 
+    display: block; 
+    padding: 10px 15px;
+    background-color: #ccc; 
+    color: black; 
+    border-bottom: 1px solid #aaa; 
+    font-weight: bold;
+    position: relative;
 }
 
-nav .dropdown{
-    background-color: cadetblue;
-    color: white;
-
+nav a:hover {
+    background-color: cyan; 
+    color: black; 
 }
 
-nav li a:hover{
-    background-color: darkgreen;
-}
-
-nav li:hover ul{
-    display:block;
-}
-
-.dropdown a{
-    background-color: rgb(11, 234, 11);
+/* Dropdown Arrow */
+nav li > a::after {
+    content: '\25BC'; 
+    float: right; 
+    font-size: 0.8em;
+    margin-top: 2px; 
     color: black;
 }
 
-.dropdown a:hover{
-    background-color: ;
+/* Dropdown Menu */
+nav ul.dropdown {
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    width: 100%; 
+    background-color: #ddd; 
+    z-index: 1000; 
 }
 
-.topList{
-    display: flex;
+nav ul.dropdown li a {
+    font-weight: normal; 
+    color: #333; 
+    background-color: #ddd; 
+    border-bottom: 1px solid #ccc; 
 }
 
-@media (min-width:576px){
-    .topList{
+nav ul.dropdown li a:hover {
+    background-color: #aaa; 
+    color: white; 
+}
+
+/* Show Dropdown on Hover */
+nav li:hover > ul.dropdown {
+    display: block; 
+}
+
+@media (max-width: 576px) {
+    nav ul {
         display: flex;
+        flex-direction: column;
     }
 
-    nav li{
-    border: solid 1px black;
-    style
+    nav li {
+        width: 100%;
+    }
+
+    nav ul.dropdown {
+        position: static; 
+        display: none; 
+        }
+
+    nav li:hover > ul.dropdown {
+        display: block; 
+    }
 }
-
-    nav li a{
-        padding: 10px 20px
-    }
-
-} 
-
-
-
