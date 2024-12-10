@@ -275,9 +275,22 @@ h4 {
     justify-content: space-around;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the content wraps to a new row when necessary */
+    gap: 2rem; /* Space between cards */
+    max-width: 1200px; /* Limits the maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 1rem; /* Adds space inside the container */
+    border: 1px solid #ddd; /* Optional: Adds a subtle border around the container */
+    background-color: #f9f9f9; /* Optional: Gives the container a background color */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
 .card {
 width: 250px;
 display: grid;
+text-align: center;
 width:100%;
 padding:2%;
 border: solid 2px #B03014;
@@ -321,6 +334,8 @@ padding-left: 3%;
  .card-items{
     border: solid 1px black;
     border-radius: 5px;
+    margin: 1em;
+
  }
 
  .card-items h3, h4 {
