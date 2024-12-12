@@ -7,15 +7,14 @@
     <title>CUNY@Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Nabla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&display=swap"
-        rel="stylesheet">
+<link
+        href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playwrite+US+Trad:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="reset" href="reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<!--SHORTCUT div#wrapper>header>h1+nav>ul+form  NOTE > means "inside of" and + means sibling of the element-->
-<!--SHORTCUT Option Shift F to organize code-->
 
 <body>
     <div id="container">
@@ -52,12 +51,13 @@
             </header>
             <!--END OF TOP NAVIGATION -->
 
-        <!-- HERO BANNER -->
-        <div class="hero-banner">
-            <h1> Queens College ranked in top 25 of Best Public Colleges and Universities for Graphic Design in the
-                Nation
-            </h1>
-        </div>
+           <!-- HERO BANNER -->
+           <div class="hero-banner">
+            <div class="hero-text-container">
+                <h1>Queens College ranked in top 25 of Best Public Colleges and Universities for Graphic Design in the Nation</h1>
+                <a href="https://www.qc.cuny.edu/" class="hero-button">Apply</a>
+            </div>
+        </div>        
         <!-- END OF HERO BANNER -->
 
         <!--PROGRAM NAV-->
@@ -101,47 +101,45 @@
         <!-- --------CONTENT--------- -->
 
         
-        <h1 class="h1-subtitles">Queens</h1>
+        <h1 class="h1-subtitles">Bronx</h1>
 
-        <div class="container">
-            <article>
-                <div class="card-items">
-                        <img class="img-card" src="images/Colleges/Bronx.jpg" alt="Bronx">
-                        <h3 class="card-title"> Bronx Community College</h3>
-                        <h4>Digital Design</h4>
-                        <p class="card-text">This program prepares students for careers in the visual communication industry in positions such as graphic design, web design, computer animation, 3D graphic visualization, motion graphics design and interactive multimedia design.</p>
-                    </div>
-              </article>
-    
-              <article>
-                <div class="card-items">
-                        <img class="img-card" src="images/Colleges/Hostos.jpg" alt="Hostos">
-                        <h3 class="card-title">Hostos Community College</h3>
-                        <h4>Digital Design & Animation</h4>
-                        <p class="card-text">Through lectures and studio-based classes the Digital Design and Animation Program provides students with a strong foundation for future occupations in motion graphics, animation, graphic design and/or web design.</p>
-                    </div>
-              </article>
-    
-              <article>
-                <div class="card-items">
-                        <img class="img-card" src="images/Colleges/Hostos.jpg" alt="Hostos">
-                        <h3 class="card-title">Hostos Community College</h3>
-                        <h4>Game Design</h4>
-                        <p class="card-text">The Associate degree in Game Design will provide students with a strong foundation for future occupations in the entertainment software industry. It will provide students with additional career opportunities in the field of entertainment software publishing.</p>
-                    </div>
-              </article>
+        <div class="card-container">
 
-              <article>
-                <div class="card-items">
-                        <img class="img-card" src="images/Colleges/Lehman_College.jpg" alt="lehman_College">
-                        <h3 class="card-title">Lehman College</h3>
-                        <h4>Computer Graphics and Imaging</h4>
-                        <p class="card-text">The Computer Graphics and Imaging program offers courses covering web design, imaging, 3-D modeling, animation, interactivity, and broadcast design, preparing students for careers as well as graduate study in these fields.</p>
-                    </div>
-              </article>
+            <div class="card">
+                <img src="images/Colleges/Bronx.jpg" alt="Bronx">
+                <h4>Bronx Community College</h4>
+                <h5>Digital Design</h5>
+                <p>This program prepares students for careers in the visual communication industry in positions such as graphic design, web design, computer animation, 3D graphic visualization, motion graphics design and interactive multimedia design.</p>
+                <a href="https://www.bcc.cuny.edu/academics/academic-departments/art-and-music-department/degree-and-certificate-programs-courses/digital-design/">Learn More</a>
+            </div>
+
+            <div class="card">
+                <img src="images/Colleges/Hostos.jpg" alt="Hostos">
+                <h4>Hostos Community College</h4>
+                <h5>Digital Design & Animation</h5>
+                <p>Through lectures and studio-based classes the Digital Design and Animation Program provides students with a strong foundation for future occupations in motion graphics, animation, graphic design and/or web design. 
+                </p>
+                <a href="https://www.hostos.cuny.edu/www-hostosdesign-com">Learn More</a>
+            </div>
+
+            <div class="card">
+                <img src="images/Colleges/Hostos.jpg" alt="Hostos">
+                <h4>Hostos Community College</h4>
+                <h5>Game Design</h5>
+                <p>The Associate degree in Game Design will provide students with a strong foundation for future occupations in the entertainment software industry. It will provide students with additional career opportunities in the field of entertainment software publishing.</p>
+                <a href="https://www.hostos.cuny.edu/Administrative-Offices/Office-of-Academic-Affairs/Departments/Humanities/Programs/Game-Design-(1)">Learn More</a>
+            </div>
+
+            <div class="card">
+                <img src="images/Colleges/Lehman_College.jpg" alt="Lehman">
+                <h4>Lehman College</h4>
+                <h5>Computer Graphics and Imaging</h5>
+                <p>The Computer Graphics and Imaging program offers courses covering web design, imaging, 3-D modeling, animation, interactivity, and broadcast design, preparing students for careers as well as graduate study in these fields.</p>
+                <a href="https://lehman-undergraduate.catalog.cuny.edu/programs/CGI-BS">Learn More</a>
+            </div>
 
 
-        </div>
+          </div>
         <!-- -------- END OF CONTENT--------- -->
 
         <!-- FOOTER -->
