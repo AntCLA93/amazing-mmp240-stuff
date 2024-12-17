@@ -124,6 +124,7 @@ left: 0;
     font-size: 20px;
 }
 
+
 /* Search Bar */
 .search-bar {
     display: flex;
@@ -148,6 +149,7 @@ left: 0;
     font-size: 1rem;
     border: none;
     outline: none;
+    border-radius: 25px 0 0 25px;
 }
 
 /* Search Button */
@@ -155,19 +157,17 @@ left: 0;
     background-color: #5000B2;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+    padding: 0.6rem 1.5rem; 
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s ease;
-    text-align: center;
-    border-radius: 5px;
+    border-radius: 0 25px 25px 0; 
 }
 
 .search-button:hover {
     background-color: #4e0876;
 }
-
 
  /* Hero Banner */
 .hero-banner {
@@ -286,6 +286,7 @@ p {
 }
 
 h4 {
+    font-size: larger;
     line-height: 28px;
     padding-bottom: 1rem;
 }
@@ -431,15 +432,6 @@ font-size: 14px;
 padding-left: 3%;
 }
 
-.footer {
-    position: sticky;
-    top:100%;
-    width: 100%;
-    color: black;
-    text-align: center;
-    align-content: end;
- }
-
  /* ** Category pages ** */
  .card-items{
     border: solid 1px black;
@@ -471,7 +463,14 @@ padding-left: 3%;
     
  }
 
-    
+ .footer {
+    position: sticky;
+    top:100%;
+    width: 100%;
+    color: black;
+    text-align: center;
+    align-content: end;
+ }  
 
 @media (min-width: 720px) { 
 
